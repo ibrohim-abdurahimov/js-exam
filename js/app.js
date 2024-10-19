@@ -79,3 +79,9 @@ btn.addEventListener("click",()=>{
     }
 
 })
+wrapper.addEventListener("clic",(event)=>{
+    if(event.target.className === "product__card_image"){
+        let id  = event.target.closest(".product__card").dataset.id
+        open(`/pages/product,html?q=${id}`, "_self")
+    }
+})
