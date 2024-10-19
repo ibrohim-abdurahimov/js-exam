@@ -1,0 +1,131 @@
+.music{
+    margin-top: 105px;
+    margin-bottom: 70px;
+    &__wrapper{
+        padding: 40px 60px;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+    &__subtitle{
+        color: #00FF66;
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__title{
+        color: #fff;
+        margin-top: 32px;
+        font-family: Inter;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 4px;
+    
+    }
+    &__time{
+        margin-top: 32px;
+        display: flex;
+        gap: 24px;
+        &_card{
+            text-align: center;
+            
+            border-radius: 50px;
+            background-color: #fff;
+            p{
+                font-size: 11px;
+            }
+        }
+        &_card.hours{
+            padding: 14px 15px;
+        }
+        &_card.days{
+            padding: 14px 17px;
+        }
+        &_card.min{
+            padding: 14px 10px;
+        }
+        &_card.sec{
+            padding: 14px 10px;
+        }
+    }
+    &__btn{
+        margin-top: 40px;
+        button{
+            padding: 16px 48px;
+            border-radius: 4px;
+            border: none;
+            background-color: #00FF66;
+            color: #FAFAFA;
+            cursor: pointer;
+        }
+    }
+    &__img{
+        img{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:990px) {
+    .music{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__time{
+            justify-content: center;
+        }
+        &__btn{
+            button{
+                display: block;
+                margin: auto;
+            }
+        }
+        &__img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+@media (max-width:750px) {
+    .music__title{
+        font-size: 40px;
+    }
+    
+}
+@media (max-width:600px) {
+    .music__title{
+        font-size: 35px;
+    }
+    
+}
+@media (max-width:510px) {
+    .music__wrapper{
+        padding: 20px;
+    }
+    .music__title{
+        font-size: 30px;
+    }
+    .music__btn{
+        button{
+            width: 100%;
+        }
+    }
+    
+}
+@media (max-width:410px) {
+    .music{
+        &__time{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        &__title{
+            font-size: 25px;
+        }
+    }
+    
+}

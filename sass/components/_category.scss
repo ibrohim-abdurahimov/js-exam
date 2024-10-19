@@ -1,0 +1,112 @@
+.category{
+    margin-top: 94px;
+    &__text{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        div{
+            width: 20px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #DB4444;
+        }
+    }
+    &__subtitle{
+        font-family: Poppins;
+        font-weight: 600;
+        color: #DB4444  ;
+    }
+    &__title{
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__card{
+        
+        background-color: #DB4444;
+        padding: 10px;
+        font-size: 25px;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+        cursor: pointer;
+    }
+    &__card:hover{
+        background-color: #DB4444;
+        color: #fff;
+        border: none;
+    }
+}
+
+@media (max-width:870px) {
+    .category{
+        &__title{
+            font-size: 32px;
+        }
+        &__wrapper{
+            overflow: auto;
+        }
+        &__card{
+            font-size: 20px;
+        }
+    }
+    
+}
+@media (max-width:720px) {
+    .category{
+        &__card{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    
+}
+@media (max-width:620px) {
+    .category{
+        &__title{
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+        &__card{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:520px) {
+    .category{
+        &__text{
+            div{
+                width: 15px;
+                height: 30px;
+            }
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__card{
+            font-size: 8px;
+        }
+    }
+}
+@media (max-width:420px) {
+    .category{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        &__card{
+            font-size: 8px;
+        }
+    }
+}

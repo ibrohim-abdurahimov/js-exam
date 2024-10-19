@@ -1,0 +1,119 @@
+.header{
+    margin-bottom: 40px;
+    &__top{
+        background-color: #000;
+    }
+    .navtop{
+        padding: 12px;
+        color: #FAFAFA;
+        font-family: Poppins;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        &__text{
+            display: flex;
+            gap: 5px;
+        }
+        &__shop{
+            font-weight: 600;
+        }
+        &__language{
+            display: flex;
+            gap: 7px;
+            
+        }
+    }
+    .navbar{
+        margin-top: 38px;
+        margin-bottom: 16px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        &__logo{
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &__collection{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            font-family: Poppins;
+        }
+        &__icon{
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        &__search{
+            display: flex;
+            gap: 34px;
+            background-color: #F5F5F5;
+            padding: 7px 12px 7px 20px;
+            border-radius: 4px;
+            input{
+                background-color: transparent;
+                border: none;
+            }
+        }
+        &__menu{
+            display: none;
+        }
+    }
+    .line{
+        width: 100%;
+        border: 0.5px solid #ececec
+    }
+
+}
+@media (max-width:885px) {
+    .header{
+        .navbar__collection{
+            display: none;
+        }
+        .navbar__menu{
+            display: block;
+        }
+    }
+    
+}
+@media (max-width:770px) {
+    .header{
+        .navtop{
+            justify-content: center;
+            gap: 25px;
+            font-size: 12px;
+        }
+    }
+   
+}
+@media (max-width:624px) {
+    .header{
+        .navtop{
+            font-size: 8px;
+        }
+    }
+}
+@media (max-width:580px) {
+    .header{
+        .navbar__search{
+            display: none;
+        }
+    }
+    
+}
+@media (max-width:460px) {
+    .header{
+        .navtop{
+            font-size: 5px;
+        }
+        .navbar__logo{
+            font-size: 16px;
+        }
+    }
+}

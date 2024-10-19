@@ -1,0 +1,137 @@
+.featured{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &__text{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        div{
+            width: 20px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #DB4444;
+        }
+    }
+    &__subtitle{
+        font-family: Poppins;
+        font-weight: 600;
+        color: #DB4444  ;
+    }
+    &__title{
+        margin-top: 20px;
+        font-family: Inter;
+        font-style: 48px;
+        font-weight: 600;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-gap: 32px;
+        grid-template-columns: repeat(4, 1fr);        
+    }
+    &__card{
+        padding: 32px;
+        color: #fff;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        &_space{
+            flex: 1;
+        }
+        &_text{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            
+        }
+        &_title{
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &_subtitle{
+            max-width: 255px;
+            width: 100%;
+            font-family: Poppins;
+            font-size: 14px;
+        }
+        &_buy{
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            max-width: 81px;
+            width: 100%;
+            border-bottom: 1px solid #f5f5f5;
+        }
+    }
+}
+.featured__card:nth-child(1){
+    background: url(../../assets/img/card5.png) no-repeat bottom;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+}
+.featured__card:nth-child(2){
+    background: url(../../assets/img/card2.png) no-repeat center;
+    background-color: black;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.featured__card:nth-child(3){
+    background: url(../../assets/img/card3.png) no-repeat bottom;
+    background-color: rgb(20, 20, 20);
+}
+.featured__card:nth-child(4){
+    background: url(../../assets/img/card4.png) no-repeat bottom;
+    background-color: rgb(20, 20, 20);
+}
+
+@media (max-width:950px) {
+    .featured{
+        &__wrapper{
+            grid-gap: 20px;
+        }
+    }
+    
+}
+@media (max-width:850px) {
+    .featured{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .featured__card:nth-child(1){
+        height: 300px;
+    }
+
+}
+@media (max-width:650px) {
+    .featured{
+        &__card{
+            &_text{
+                gap: 10px;
+            }
+            &_title{
+                font-size: 18px;
+            }
+            &_subtitle{
+                max-width: 200px;
+                font-size: 12px;
+            }
+            &_buy{
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+@media (max-width:550px) {
+    .featured__card_title{
+        font-size: 16px;
+    }
+    
+}
